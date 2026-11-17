@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STREAM 360</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #101010;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #181818;
+      padding: 20px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ed2535;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #ed2535;
+    }
+
+    .hero {
+      padding: 85px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #30080d, #101010);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 55px);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #ed2535;
+    }
+
+    .hero p {
+      color: #ccc;
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #ed2535;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 45px 6%;
+    }
+
+    .section h2 {
+      margin-bottom: 25px;
+      border-left: 4px solid #ed2535;
+      padding-left: 12px;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+    }
+
+    .category {
+      background: #202020;
+      padding: 28px 12px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #333;
+      transition: 0.3s;
+    }
+
+    .category:hover {
+      background: #351015;
+      border-color: #ed2535;
+      transform: translateY(-4px);
+    }
+
+    .emoji {
+      font-size: 34px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+    .category h3 {
+      font-size: 15px;
+    }
+
+    .info {
+      background: #191919;
+      padding: 40px 6%;
+      text-align: center;
+      color: #ccc;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #080808;
+      text-align: center;
+      padding: 25px;
+      color: #888;
+      font-size: 13px;
+    }
+
+    @media(max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding: 65px 5%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">STREAM <span>360</span></div>
+
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#categories">Explorer</a>
+      <a href="#abonnement">Abonnements</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="accueil">
+    <h1>Bienvenue sur <span>STREAM 360</span></h1>
+
+    <p>
+      Films, séries, animés, sports, musique
+      et divertissements réunis au même endroit.
+    </p>
+
+    <a href="#categories" class="btn">
+      Découvrir nos univers
+    </a>
+  </section>
+
+  <section class="section" id="categories">
+    <h2>Explorer nos univers</h2>
+
+    <div class="categories">
+
+      <div class="category">
+        <span class="emoji">🎬</span>
+        <h3>Films</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">📺</span>
+        <h3>Séries</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">🍥</span>
+        <h3>Animés</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">🎥</span>
+        <h3>Documentaires</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">⚽</span>
+        <h3>Sports</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">🎮</span>
+        <h3>Gaming</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">🎵</span>
+        <h3>Musique</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">📚</span>
+        <h3>Éducation</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">🧒</span>
+        <h3>STREAM 360 KIDS</h3>
+      </div>
+
+      <div class="category">
+        <span class="emoji">🔴</span>
+        <h3>STREAM 360 LIVE</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="info" id="abonnement">
+    <h2>Rejoignez STREAM 360</h2>
+
+    <p>
+      Découvrez notre univers de divertissement.
+      Les comptes et les abonnements seront disponibles
+      après leur mise en place.
+    </p>
+
+    <br>
+
+    <a href="mailto:contact@stream360.example" class="btn">
+      Nous contacter
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 STREAM 360. Tous droits réservés.</p>
+    <p>Votre divertissement, sans limites.</p>
+  </footer>
+
+</body>
+</html>
