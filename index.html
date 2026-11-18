@@ -262,6 +262,18 @@
     <p>© 2026 STREAM 360. Tous droits réservés.</p>
     <p>Votre divertissement, sans limites.</p>
   </footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+<script>
+  const SUPABASE_URL = "https://yjakcarfhlmaluyvqcvj.supabase.co/rest/v1/";
+  const SUPABASE_PUBLIC_KEY = "sb_publishable_TM5T6x-vC97cp11vhhjFIA_cceabBD3";
+
+  const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_PUBLIC_KEY
+  );
+
+  console.log("STREAM 360 est connecté à Supabase !");
+</script>
 </body>
 </html>
